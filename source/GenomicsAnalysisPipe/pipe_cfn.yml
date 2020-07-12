@@ -110,6 +110,7 @@ Resources:
   CodePipeline:
     Type: AWS::CodePipeline::Pipeline
     DependsOn:
+      - CloudFormationRole    
       - CodeBuildCopyResourcesProject
       - CodeBuildBuildHailProject
       - CodePipelineRole
